@@ -156,6 +156,7 @@ function order() {
     .post(url, order)
     .then(function (res) {
       alert('已完成下訂，謝謝您的購買')
+      getCartData()
       orderName.value = ''
       orderPhone.value = ''
       orderMail.value = ''
